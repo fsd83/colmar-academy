@@ -1,4 +1,4 @@
-/* import font from Google CDN */
+/** import font from Google CDN */
 @import url('href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Source+Sans+Pro:wght@300;400&display=swap"');
 
 
@@ -23,7 +23,7 @@ html, body{
 /** Start of Desktop Section **/
 /** ************************ **/
 
-/* Set up the navbar for the desktop */
+/** Set up the navbar for the desktop */
 .desktop-nav{
     grid-column: full--start / full--end;
     background-color: #fff;
@@ -39,7 +39,8 @@ html, body{
     align-items: center;
 }
 
-/* Set up logo styles */
+
+/** Set up logo styles */
 .logo{
     height: 2rem;
     width: auto;
@@ -66,7 +67,7 @@ html, body{
     display: flex;
 }
 
-/* Set up navigation links' styles */
+/**Set up navigation links' styles */
 .nav-link{
     display: inline-block;
     text-decoration: none;
@@ -74,7 +75,8 @@ html, body{
     font-size: 1rem;
 }
 
-/* This code is not in the guide, althernative  method shown by Trainner */
+
+/* This code is not in the guide, althernative method shown by Trainner */
 .nav-list a{
     display: inline-block;
     text-decoration: none;
@@ -92,7 +94,8 @@ html, body{
     margin-right: 1.5rem;
 }
 
-/* Set up header area */
+
+/** Set up header area */
 .header-picture{
     background-color: #c8c8c8;
     display: flex;
@@ -140,11 +143,15 @@ html, body{
     font-size: 0.8rem;
     text-decoration: none;
     text-align: center;
+   
 }
+/* End Set up header area */
 
-/* hover effect for call to action link */
+
+/** hover effect for call to action link */
 .header-content div a:hover{
     background-color: rgb(72, 72, 72, 0.5);
+    
 }
 
 .header-content div a:visited, 
@@ -153,11 +160,14 @@ html, body{
     text-decoration: none;
     background-color: #484848;
 }
+/* End of hover effect for call to action link */
 
-/* Set up practice section */
+
+/** Set up practice section */
 .practice{
     background-color: #f0f0f0;
     padding: 2rem 1.5rem;
+       
 }
 
 .practice img{
@@ -184,7 +194,6 @@ html, body{
     background-color: #f0f0f0;
     display: grid;
     grid-template-rows: repeat(3, min-content);
-    border-left: 1px solid #e7e7e7;
     padding-top: 1rem;
 }
 
@@ -192,15 +201,16 @@ html, body{
     display: grid;
     grid-template-columns: 0.4fr 0.6fr;
     align-items: center;
-    border-bottom: 1px solid #e7e7e7;
+    border-left: 1px solid #7a7a7a3f;
     font-size: small;
     color: #484848;;
-}
+   }
 
 .event-block img{
     width: 100%;
     height: auto;
     padding: 1rem;
+  
 }
 
 .event-block-content{
@@ -232,8 +242,7 @@ html, body{
 .event-block:last-child{
 	background-color:#cecbcb;
 }
-padding: 1rem;
-}
+
 .event-block-content{
     margin: 0 2rem;
 
@@ -244,7 +253,8 @@ padding: 1rem;
     padding: 0.5rem 0;
 }
 
-/* Example this mothod can be apply */
+
+/* Example this method can be apply */
 .event-block-content a:link,
 .event-block-content a:visited, 
 .event-block-content a:active
@@ -258,10 +268,486 @@ padding: 1rem;
     background-color: #d8d8d8;
 }
 
+/* End of practics desktop view */
 
-/* ******************************/
-/* End of the desktop view */
 
-/* Start of the moblie view */
-/* todo */
-/* End of the moblie view */
+/* *Start of learning desktop view */
+/* ******************************* */
+    
+#learning-section{
+    grid-column: full--start / full--end;
+    width: 80;
+    background-color: #eaebec;
+    padding: 2rem 7rem 2rem 7rem;
+       
+ }
+
+ .learning-title{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+.learning-block{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+
+ .learning-block-content{
+        width: 100%;  
+        font-size: small;
+        background-color: #fff;
+        padding: 0 0 2rem 0;
+                     
+    }
+ 
+.learning-block-content h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    color: #4e4e4e;
+    padding: 1rem 0 0 1rem;
+    
+}
+.learning-card-text{
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0.5rem 0 0 1rem;
+    color: #8d8d8d;
+}
+
+
+
+.learning-block-content span{
+    display: flex;
+    padding: 0.5rem 0 0 1rem;
+    font-size: 15px;
+    color: #8d8d8d;
+}
+
+
+
+.learning-block-content img{
+    display: block;
+    width: 100%;
+    height: auto%;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/imgplaceholder.png); /*the two dots are to up level to access into the img folder*/
+    text-indent: -9999px;
+} 
+
+
+ /* End of learning desktop view */
+
+
+ /* * Start of thesis desktop view */
+.thesis-title{
+        grid-column: full--start / full--end;
+        font-size: xx-large;
+        text-align: center;
+        color: #4a4a4a;
+    }
+
+/** start media section left */
+.thesis-title h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bold;
+    color: #554f4f;
+    padding: 2rem 0 0 0;
+}
+
+
+.thesis-media-block{
+     display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.thesis-video-block video{
+    width: 90%;
+    height: auto;
+    padding: 2rem 2rem;
+   
+}
+
+.thesis-video-block h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #686767;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 0 2rem 2rem ;
+}
+
+.thesis-video-block p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7c7c7c;
+    font-size: medium;
+    padding: 0 2rem 2rem 2rem;
+}/* End media section left */
+
+
+/**start right section right */
+
+.thesis-events{
+    position: relative;
+    top: 30px;
+}
+
+
+.thesis-events h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #585858;
+    font-size: medium;    
+}
+
+
+.thesis-events-block{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    align-items: center;
+    font-size: small;
+    color: #4a4a4a;
+    
+}
+
+
+.thesis-events-block img{
+     width: 80%;
+    height: auto;
+    padding: 1rem 1rem;
+    /* border: 5px solid rgb(226, 13, 84); */
+}
+
+.thesis-events-block-content h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        color: #444444;
+        font-weight: bold;
+      
+    }
+
+.thesis-events-block-content p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #585858;
+        font-size: medium;
+        padding: 1rem 0;
+        
+    }
+
+   
+.thesis-events-block:first-child{
+        background-color:#cecbcb;
+}
+/* End of thesis desktop view */
+
+/** Start of Footer desktop view */
+.footer-block{
+    box-sizing: border-box;
+    grid-column: full--start / full--end;
+    border-top: 2px solid #9191924b;
+    padding: 0 0 2rem 0; 
+  
+}
+
+.footer-text1{
+    display: flex;
+    float: left;
+    text-align: left;
+    color: #919192fd;
+    font-size: smaller;
+    padding: 1rem 0 0 2rem;
+    
+    
+}
+
+.footer-text2{
+    display: flex;
+    float: right;
+    color: #919192fd;
+    font-size: smaller;
+    padding: 1rem 2rem 0 0;
+}
+/* End of Footer desktop view */
+
+
+
+/** All section Moblie view deactivate */
+
+.mobile-nav{
+    display: none;
+}
+
+/** Practics section deactive the mobile veiew  */
+.events-mobile{
+    display: none;
+}
+
+.learning-mobile{
+    display: none;
+}
+
+.thesis.mobile, 
+.thesis-mobile-title, 
+.thesis-mobile-video-block{
+    display: none;
+}
+
+.footer-mobile-block{
+    display: none;
+}
+
+/* -------End-------- */
+
+
+/** Start of Mobile Section **/
+/** *********************** **/
+
+/* ! Top nav Start of Media query (Mobile)*/
+
+/* target size: 640px (40rem) width or less */
+@media screen and (max-width: 40rem ){
+
+    /* display mobile-nav */
+    .mobile-nav{
+      display: flex;
+      grid-column: full--start / full--end;
+      align-items: center;
+      justify-content: space-around;
+      height: 4rem;
+    }
+  
+      /* Hide desktop-nav*/
+     .desktop-nav{
+          display: none; 
+      }
+  
+      /* header-content */
+      .container{
+          max-width: 100dw;
+      }
+    
+      .header-picture{
+          grid-column: full--start / full--end;
+      }
+  
+      .header-picture img{
+          padding: 0;
+      }
+  
+      .header-content{
+          display: flex;
+          grid-column: full--start / full--end;
+          padding: 2rem 1rem 2rem 1rem;
+      }
+  
+      .header-content div h1{
+          font-size: xx-large;
+          padding: 0 0 0 0;
+      }
+  
+  
+      .header-content h2{
+          font-size: larger;
+          padding: 0 02rem 0;
+      }
+      
+  
+      .header-content div{
+          display: block;
+          width: 100%;
+        
+      }
+  
+      /** Hide Practics desktop and event section  */
+      .practice{ 
+          display: none;
+      }
+  
+      .events{
+          display: none;
+      }
+      
+      .events-mobile{
+          display: block;
+          grid-column: full--start / full--end;
+          padding: 1rem;
+        
+      }
+  
+      .events-mobile .event-block{
+          grid-template-columns: 1fr;
+          background-color: #ffffff;
+    
+      }
+  
+      .events-mobile .event-block img{
+          padding: 0;
+      }
+  
+  
+      .events-mobile .event-block{
+          padding: 0;
+      }
+      
+      .events-mobile .event-block-content{
+          padding: 2rem 0 2rem 1rem;
+          margin: 0;
+          
+      }
+      
+      .events-mobile .event-block h4{
+      font-size: xx-large;
+      font-weight: 600;
+      }
+      
+      
+      .events-mobile .event-block-content p{
+          font-size: large;
+          font-weight: lighter;
+      }
+      
+      
+      .events-mobile .event-block-content a:link{
+          font-size: large;
+      }
+
+
+        /** Start of Learning Mobile Section */
+        /*Hide Learning desktop view */
+        #learning-section{
+            display: none; 
+        } 
+
+        .learning-mobile{
+            display: block;
+            grid-column: full--start / full--end;
+            padding: 1rem;
+        }
+
+        .learning-mobile-title{
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            color: #585858;
+        }
+
+       
+        .learning-mobile-link a:link{
+            display: block;
+            background-color: #d8d8d8;
+            width: 23rem;
+            padding: 1rem 0 1rem 1rem;
+            margin: 8px;
+            font-size: large;
+            font-weight: lighter;
+            text-decoration: none;
+                       
+        } 
+
+        .learning-mobile-link > a{
+            color: #505050;
+            font-weight: bolder;
+                    
+        }
+
+
+        /** hover effect for call to action link */
+        .learning-mobile-link a:hover
+        {
+             background-color: rgb(72, 72, 72, 0.5);
+        }
+
+        .learning-mobiile-link a:link,
+        .learning-mobiile-link a:visited, 
+        .learning-mobiile-link a:active
+        {
+            font-size: 1rem;
+            font-weight: bold;
+            color:#4a4a4a;
+            
+        }
+
+        /* End of Learning Mobile Section */
+
+        /** Start of thesis Mobile Section */
+
+        /* Hide thesis desktop view */
+        .thesis-title,
+        .thesis-media-block, 
+        .thesis-events{
+            display: none;
+        }
+
+        .thesis-mobile{
+            display: grid;
+            grid-column: full--start / full--end;
+            padding: 1rem;
+        }
+
+        .thesis-mobile-title{
+            display: grid;
+            width: 90%;
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            color: #585858;
+            padding: 1rem;
+        
+            
+        }
+
+        .thesis-mobile-video-block{
+            display: grid;
+            width: 100% ;
+            height: auto;     
+        
+        }
+
+        .thesis-mobile-video{
+            display: block;
+            width: 100% ;
+            height: auto;
+        }
+    /* End of thesis Mobile Section */
+
+    /** Start of footer mobile view */
+    /* Hide footer desktop view */
+
+    .footer-block{
+        display: none;
+    }
+    
+
+    .footer-mobile-block{
+        display: block;
+        grid-column: full--start / full--end;
+        padding: 2rem 0;
+    }
+
+    .footer-mobile-text{
+        display:block;
+        text-align: center;
+        color: #919192fd;
+        font-size: small;
+        padding: 0 0 1 0;
+        
+    }
+    /* End of footer mobile view */
+
+}
+
+  /* End of Top nav the mobile view */
+
+
+
+
